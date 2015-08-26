@@ -7,24 +7,14 @@
 
   <div class="container">
 
-  {% for error in errors %}
-    <p>{{ error }}</p>
-  {% endfor %}
-
     <form action= "/submit" method="post">
       <div class="form-group">
-        <label for="puppyName">Puppy Name</label>
-        <input type="text" class="form-control" id="puppy-name" name= "puppyName" placeholder="Puppy Name">
+        <label for="itemName">Item Name</label>
+        <input type="text" class="form-control" id="item-name" name= "itemName" placeholder="Item Name">
       </div>
 
-      <div class="form-group">
-        <label for="puppy-id">Puppy ID</label>
-        <input type="text" class="form-control" id="puppy-id" name= "puppyID" placeholder="Puppy ID">
-      </div>
-
-      </div>
-      <button type="submit" class="btn btn-default">Create Puppy</button>
-  </form>
+      <button type="submit" class="btn btn-default">Add Item</button>
+    </form>
 
   </div>
 

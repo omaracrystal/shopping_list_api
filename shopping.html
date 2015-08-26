@@ -7,7 +7,7 @@
 
   <div class="container">
 
-    <h1>Showing items</h1>
+    <h1>Shopping Cart</h1>
 
     <div class="alert alert-success" role="alert">
       <p>{{success}}</p>
@@ -20,17 +20,17 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>Item Name</th>
-          <th>Item ID</th>
+          <th>Puppy Name</th>
+          <th>Puppy ID</th>
         </tr>
       </thead>
       <tbody>
-<!-- items is the key and item is the iterator -->
+<!-- puppies is the key and puppy is the iterator -->
 <!-- % logic tags have % -->
-       {% for item in items %}
+       {% for puppy in puppies %}
         <tr>
-          <td>{{item.name}}</td>
-          <td>{{item.id}}</td>
+          <td>{{puppy.name}}</td>
+          <td>{{puppy.id}}</td>
         </tr>
         {% endfor %}
       </tbody>
